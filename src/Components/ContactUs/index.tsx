@@ -33,9 +33,10 @@ const ContactUs = () => {
             Emerging Markets.
           </p>
 
-          <div className="flex w-[80%] lg:flex-row md:flex-row sm:flex-row xs:flex-col items-center justify-center lg:gap-4 md:gap-4 sm:gap-4 xs:gap-4 xs:gap-2 lg:mt-[3rem] md:mt-[3rem]  sm:mt-[3rem] xs:mt-[3rem]">
+          <div className="flex w-[80%] lg:flex-row md:flex-row sm:flex-row xs:flex-col items-center justify-center lg:gap-4 md:gap-4 sm:gap-4  xs:gap-2 lg:mt-[3rem] md:mt-[3rem]  sm:mt-[3rem] xs:mt-[3rem]">
+            <div className="lg:w-[35%] lg:pl-[3rem] md:w-[35%] sm:w-[35%] xs:w-[55%] flex flex-row">
             <select
-              className="bg-[#002549] text-white border border-white px-4 py-2 lg:text-[16px] md:text-[14px] sm:text-[12px] xs:text-[12px] rounded-lg lg:w-[35%] md:w-[35%] sm:w-[35%] xs:w-[55%] focus:outline-none"
+              className="bg-[#002549] text-white  border-white px-4 py-2 lg:text-[16px] md:text-[14px] sm:text-[12px] xs:text-[12px] w-full  rounded-l-lg focus:outline-none border-t-[1px] border-b-[1px] border-l-[1px]"
               value={selectedService}
               onChange={(e) => setSelectedService(e.target.value)}
             >
@@ -44,6 +45,9 @@ const ContactUs = () => {
               <option value="service2">Service 2</option>
               <option value="service3">Service 3</option>
             </select>
+            <span className="w-[10px] h-[40px] border-t-[1px] border-b-[1px] border-r-[1px] border-[#fff] rounded-r-lg">
+            </span>
+            </div>   
 
             <input
               type="email"
